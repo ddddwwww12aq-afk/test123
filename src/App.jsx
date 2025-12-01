@@ -27,7 +27,7 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React 222logos to learn more
-          ddddwwww12aq-afk
+          ddddwtttttttttttttttttttttttttttt
       </p>
     </>
   )
