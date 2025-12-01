@@ -35,5 +35,5 @@ jobs:
         with:
           path: ./dist # Путь к папке сборки Vite
 
-      # 6. Деплоим на GitHub Pages
+      # 6. Деплоим на GitHub Pagesп
       - uses: actions/deploy-pages@v4
