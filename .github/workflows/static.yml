@@ -1,12 +1,10 @@
-name: Deploy Vite App to Pages
+name: MusicFun Deploy
 
 on:
-  # Триггер на push в ветку main
   push:
     branches: [main]
 
 permissions:
-  # Необходимые разрешения для деплоя
   contents: read
   pages: write
   id-token: write
@@ -15,25 +13,14 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # 1. Клонируем репозиторий
       - uses: actions/checkout@v4
-
-      # 2. Устанавливаем Node.js
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-
-      # 3. Устанавливаем зависимости
       - run: npm install
-
-      # 4. Собираем проект (для Vite команда по умолчанию - build)
       - run: npm run build
-
-      # 5. Загружаем артефакт сборки для деплоя
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist # Путь к папке сборки Vite
-
-      # 6. Деплоим на GitHub Pagesп
+          path: "./dist"
       - uses: actions/deploy-pages@v4
