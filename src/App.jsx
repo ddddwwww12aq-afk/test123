@@ -28,6 +28,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React 222logos to learn more
           ddddwtttttttttttttttttttttttttttt6
+          пппп
       </p>
     </>
   )
