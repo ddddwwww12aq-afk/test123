@@ -6,4 +6,5 @@ export default defineConfig({
     plugins: [react()],
     // Добавьте эту строку
     base: './'
+
 })
